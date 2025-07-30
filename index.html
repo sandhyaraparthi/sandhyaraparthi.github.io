@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhya Raparthi - Project Manager | Scrum Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1f2937;
+        }
+        .section-title {
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            padding-bottom: 2rem;
+            border-left: 2px solid #d1d5db;
+        }
+        .timeline-item:last-child {
+            border-left: 2px solid transparent;
+            padding-bottom: 0;
+        }
+        .timeline-marker {
+            position: absolute;
+            left: -0.5rem;
+            top: 0.25rem;
+            height: 1rem;
+            width: 1rem;
+            background-color: #3b82f6;
+            border-radius: 9999px;
+            border: 2px solid #f8fafc;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .tag {
+            background-color: #e0e7ff;
+            color: #3730a3;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="#">Sandhya Raparthi</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#experience" class="text-gray-600 nav-link">Experience</a>
+                <a href="#projects" class="text-gray-600 nav-link">Projects</a>
+                <a href="#skills" class="text-gray-600 nav-link">Skills</a>
+                <a href="#education" class="text-gray-600 nav-link">Education</a>
+                <a href="#certifications" class="text-gray-600 nav-link">Certifications</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#experience" class="block py-2 text-gray-600 nav-link">Experience</a>
+            <a href="#projects" class="block py-2 text-gray-600 nav-link">Projects</a>
+            <a href="#skills" class="block py-2 text-gray-600 nav-link">Skills</a>
+            <a href="#education" class="block py-2 text-gray-600 nav-link">Education</a>
+            <a href="#certifications" class="block py-2 text-gray-600 nav-link">Certifications</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 lg:p-8">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-16">
+            <h1 class="text-5xl font-extrabold text-gray-900">Sandhya Raparthi</h1>
+            <div class="mt-4 flex justify-center flex-wrap gap-4">
+                <span class="tag bg-blue-100 text-blue-800">Project Manager</span>
+                <span class="tag bg-green-100 text-green-800">Scrum Master</span>
+                <span class="tag bg-indigo-100 text-indigo-800">Digital Transformation Leader</span>
+            </div>
+            <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-2 text-gray-600">
+                <a href="mailto:sandhyaraparthi96@gmail.com" class="hover:text-blue-600 transition duration-300"><i class="fas fa-envelope mr-2"></i>sandhyaraparthi96@gmail.com</a>
+                <a href="tel:+491794389433" class="hover:text-blue-600 transition duration-300"><i class="fas fa-phone mr-2"></i>+49 179 4389433</a>
+                <a href="https://www.linkedin.com/in/sandhya-raparthi-355b49101/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition duration-300"><i class="fab fa-linkedin mr-2"></i>LinkedIn Profile</a>
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Hilden, Germany</span>
+            </div>
+            <p class="mt-8 max-w-3xl mx-auto text-lg text-gray-700">
+                Certified Scrum Master (PSM I) with 3+ years of experience leading cross-functional projects across digital, IT, and logistics domains. Proven track record of delivering high-impact solutions that enhance process efficiency, data integrity, and cross-team collaboration.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-12">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="mt-8">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card p-6">
+                        <h3 class="text-xl font-semibold text-gray-800"><i class="fas fa-briefcase mr-3 text-blue-500"></i>Project Manager - Rhenus 4PL Solutions</h3>
+                        <p class="text-md text-gray-600">Rhenus Logistics | Dec 2023 - Present | Hilden, Germany</p>
+                        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                            <li>Managed end-to-end logistics and digital transformation projects, ensuring on-time delivery.</li>
+                            <li>Maintained master data with 99% accuracy, enhancing operational reliability.</li>
+                            <li>Built and managed Power BI dashboards, reducing manual reporting time by 40%.</li>
+                            <li>Facilitated Agile ceremonies (sprint planning, stand-ups, retrospectives) as a certified PSM I.</li>
+                            <li>Gathered customer requirements and communicated them to developers for the 4PL tool.</li>
+                            <li>Led daily project tracking, proactively resolving 95% of critical data inconsistencies.</li>
+                            <li>Drafted and responded to RFIs and RFQs, contributing to contract wins.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card p-6">
+                        <h3 class="text-xl font-semibold text-gray-800"><i class="fas fa-briefcase mr-3 text-blue-500"></i>Project Consultant: Digitalisation of Air and Sea Logistics</h3>
+                        <p class="text-md text-gray-600">Dachser SE | Dec 2021 - Nov 2023 | Kempten, Germany</p>
+                        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                            <li>Interfaced between operations, sales, and IT to drive 5+ concurrent digitalization initiatives.</li>
+                            <li>Supported integration of 20+ customers via EDI, increasing automation and reducing manual errors by 30%.</li>
+                            <li>Defined KPIs and process standards, improving EDI efficiency by 25%.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="card p-6">
+                        <h3 class="text-xl font-semibold text-gray-800"><i class="fas fa-briefcase mr-3 text-blue-500"></i>Process Planning Intern</h3>
+                        <p class="text-md text-gray-600">Mercedes Benz AG | Jun 2020 - Sep 2020 | Bremen, Germany</p>
+                        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                            <li>Analyzed system maintenance processes using SAP and process planning software.</li>
+                            <li>Forecasted conveyor stocks to optimize container principles and load carrier allocation.</li>
+                            <li>Evaluated JIS and SET processes, contributing to greater divisional transparency.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800"><i class="fas fa-pills mr-3 text-blue-500"></i>Optimization of Pharma Supply Chain with Blockchain</h3>
+                    <p class="mt-2 text-gray-600">Master Thesis project focused on improving downstream supply chain integrity in the pharmaceutical industry by implementing blockchain technology.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800"><i class="fas fa-ship mr-3 text-blue-500"></i>Mathematical Model in Maritime Logistics</h3>
+                    <p class="mt-2 text-gray-600">Addressed the Liner Shipping Network Design Problem (LSNDP) by developing a matheuristic model for efficient container transport network design.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800"><i class="fas fa-truck-moving mr-3 text-blue-500"></i>Intermodal Transport Planning</h3>
+                    <p class="mt-2 text-gray-600">Devised a feasible and economical solution for shipping 800 tons of fish from Norway to Estonia, combining transport modes to reduce time and cost.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-12">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold mb-3"><i class="fas fa-tasks mr-2 text-blue-600"></i>Project Management</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">End-to-End Project Lifecycle</span>
+                        <span class="tag">Requirements Gathering</span>
+                        <span class="tag">Stakeholder Communication</span>
+                        <span class="tag">RFQ/RFI Handling</span>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold mb-3"><i class="fas fa-cogs mr-2 text-blue-600"></i>Technical Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">SAP</span>
+                        <span class="tag">EDI Integration</span>
+                        <span class="tag">Jira</span>
+                        <span class="tag">Confluence</span>
+                        <span class="tag">Microsoft Office Suite</span>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold mb-3"><i class="fas fa-sync-alt mr-2 text-blue-600"></i>Methodologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Agile (Scrum Certified PSM I)</span>
+                        <span class="tag">Waterfall</span>
+                        <span class="tag">Process Optimization</span>
+                        <span class="tag">KPI Monitoring</span>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold mb-3"><i class="fas fa-users mr-2 text-blue-600"></i>Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Cross-functional Collaboration</span>
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Communication</span>
+                        <span class="tag">Attention to Detail</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-12">
+             <h2 class="section-title">Education</h2>
+             <div class="mt-8 grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2"><i class="fas fa-graduation-cap mr-3 text-blue-500"></i>Masters in Technical Logistics</h3>
+                    <p class="text-gray-600">Universität Duisburg-Essen, Duisburg, Germany | Sep 2021</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2"><i class="fas fa-graduation-cap mr-3 text-blue-500"></i>B. Tech in Mechanical Engineering</h3>
+                    <p class="text-gray-600">Jawaharlal Nehru Technological University, Hyderabad, India | Jul 2017</p>
+                </div>
+             </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-12">
+            <h2 class="section-title">Professional Development & Certifications</h2>
+            <div class="card p-6 mt-8">
+                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-gray-700">
+                    <li class="flex items-center"><i class="fas fa-certificate mr-3 text-blue-500 w-5 text-center"></i>Professional Scrum Master I (PSM I), Scrum.org</li>
+                    <li class="flex items-center"><i class="fas fa-certificate mr-3 text-blue-500 w-5 text-center"></i>Certificate Programme in IT Project Management, ISB Executive Education</li>
+                    <li class="flex items-center"><i class="fas fa-certificate mr-3 text-blue-500 w-5 text-center"></i>Google Project Management - Professional Certificate, Google (Coursera)</li>
+                    <li class="flex items-center"><i class="fas fa-certificate mr-3 text-blue-500 w-5 text-center"></i>ERP With SAP (TERP10 ON S/4 HANA), Universität Duisburg-Essen</li>
+                    <li class="flex items-center"><i class="fas fa-certificate mr-3 text-blue-500 w-5 text-center"></i>Data Analytics for Lean Six Sigma, University of Amsterdam (Coursera)</li>
+                    <li class="flex items-center"><i class="fas fa-certificate mr-3 text-blue-500 w-5 text-center"></i>Supply Chain Analytics Specialization, Rutgers (Coursera)</li>
+                 </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-8 mt-12">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                 <a href="mailto:sandhyaraparthi96@gmail.com" class="text-gray-400 hover:text-white transition duration-300 text-2xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sandhya-raparthi-355b49101/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300 text-2xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Sandhya Raparthi. All Rights Reserved.</p>
+            <p class="text-sm text-gray-500 mt-2">Built with HTML, Tailwind CSS, and a touch of JavaScript.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Hide mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
